@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="uz">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>iOS 27 Liquid Glass Control Panel</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <div class="glass-container">
+    <aside class="sidebar">
+      <div class="logo">
+        <h2>KIBER SAFE</h2>
+      </div>
+      <div class="device-card" id="deviceCard">
+        <h3>Qurilma statusi</h3>
+        <p id="devSN">SN: Scanning...</p>
+        <p id="deviCloud">iCloud: -</p>
+        <p id="devVer">iOS: -</p>
+        <button id="btnScan" class="btn-secondary">Qayta skan qilish</button>
+      </div>
+    </aside>
+    <main class="content">
+      <h1>Boshqaruv Paneli</h1>
+      <div class="control-group">
+        <label class="radio-option">
+          <input type="radio" name="taskOption" value="removeScreenTime" checked>
+          <span class="custom-radio"></span>
+          1-Modul: Remove Screen Time
+        </label>
+        <label class="radio-option">
+          <input type="radio" name="taskOption" value="removeScreenTimeAccount">
+          <span class="custom-radio"></span>
+          2-Modul: Remove Screen Time Account
+        </label>
+      </div>
+      <div class="control-group">
+        <label class="checkbox-option">
+          <input type="checkbox" id="chkOtaReset">
+          <span class="custom-checkbox"></span>
+          Block OTA & Reset Update
+        </label>
+      </div>
+      <button id="btnExecute" class="btn-primary">Bajarish</button>
+      <div class="log-box" id="logBox">
+        <p class="log-entry">[Tizim tayyor]</p>
+      </div>
+    </main>
+  </div>
+  <script src="renderer.js"></script>
+</body>
+</html>

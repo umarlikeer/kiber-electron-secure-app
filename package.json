@@ -1,0 +1,17 @@
+{
+  "name": "kiber-electron-secure-app",
+  "version": "1.0.0",
+  "description": "Secure Electron desktop application frame with anti-tampering and V8 bytecode support",
+  "main": "src/main/index.js",
+  "scripts": {
+    "start": "electron .",
+    "compile-bytecode": "node build/compile-bytecode.js"
+  },
+  "dependencies": {
+    "bytenode": "^1.5.3"
+  },
+  "devDependencies": {
+    "electron": "^28.2.0",
+    "javascript-obfuscator": "^4.1.0"
+  }
+}
